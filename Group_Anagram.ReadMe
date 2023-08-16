@@ -1,0 +1,25 @@
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+
+An Anagram is a word or phrase formed by rearranging the letters of a differend word or phrasem typically using all the original letts exactly once.
+
+So in this problem, the objective is to group the words that has the same letters together.
+
+strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+
+-from the start we will use HashMap because we accomplish our goal in the time of O*n which is faster than N*n if we would have gone through each word at a time.
+
+-then import the libraries necessary: List from typing and defaultdict from collections
+
+- then create our class and establish provide the given array
+
+-then we create our function with the proper parameters
+
+- now we establish our variables and hasmaps, anagram_map will function as the hashMap, and result will be where we store the answer
+
+-we begin a for loop to run through the array strs, and for every loop we store in a tuple every word with the same letters, we use a tuple because it is immutable. Since HashMaps uses keys and values, we must use an immutable collections. ++ The loop continues to add / append to the hashMap the sorted keys and their values
+
+-but now all we want are the values not the keys, so
+
+-we run another for loop of the values of anagram_map and add those values to the result array, this will display sorted values in an array
+
+-we then create an instance of the Solution class and call the function, and print our values.
