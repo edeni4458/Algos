@@ -10,13 +10,13 @@ strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
 
 -then import the libraries necessary: List from typing and defaultdict from collections
 
-- then create our class and establish provide the given array
+- then create our class and provide the given array
 
 -then we create our function with the proper parameters
 
-- now we establish our variables and hasmaps, anagram_map will function as the hashMap, and result will be where we store the answer
+- now we establish our variables and hasmaps, anagram_map* will function as the hashMap, and result* will be where we store the answer
 
--we begin a for loop to run through the array strs, and for every loop we store in a tuple every word with the same letters, we use a tuple because it is immutable. Since HashMaps uses keys and values, we must use an immutable collections. ++ The loop continues to add / append to the hashMap the sorted keys and their values
+-we begin a for-loop* to run through the array strs*, and for every loop we store in a tuple every word with the same letters, we use a tuple because it is immutable. Since HashMaps uses keys and values, we must use an immutable collections. ++ The loop continues to add / append to the hashMap the sorted keys and their values
 
 -but now all we want are the values not the keys, so
 
